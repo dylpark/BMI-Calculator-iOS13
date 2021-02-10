@@ -18,7 +18,7 @@ class CalculateViewController: UIViewController {
     var calculatorBrain = CalculatorBrain()
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad()        
     }
 
     @IBAction func heightSliderChanged(_ sender: UISlider) {
@@ -44,6 +44,8 @@ class CalculateViewController: UIViewController {
         if segue.identifier == "goToResult" {
             let destinationVC = segue.destination as! ResultViewController
             destinationVC.bmiValue = calculatorBrain.getBMIValue()
+            destinationVC.advice = calculatorBrain.getAdvice()
+            destinationVC.color = calculatorBrain.getColor()
         }
     }
     
