@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  BMI Calculator
 //
-//  Created by Dylan Park on 9/2/2021.
+//  Created by Dylan Park on 9/2/21.
 //  Copyright © 2021 Angela Yu. All rights reserved.
 //
 
